@@ -56,10 +56,10 @@ function geradorDePorcentagem(a, b){
     let primeraOperacao = multiplicar(a,100);
     let segundaOperacao = dividir(primeraOperacao,b);
     return segundaOperacao;
-    // return dividir(multiplicar(a,100),b)
+    //return dividir(multiplicar(a,100),b)
 }
 
-/* console.log("***** NIVEL III *****");
+console.log("***** NIVEL III *****");
 
 console.log("quadradoDeUmNumero(3)");
 console.log(quadradoDeUmNumero(3));
@@ -73,7 +73,7 @@ console.log(calcularPorcentagem(100, 50)+"%");
 console.log("geradorDePorcentagem(30,500)");
 console.log(geradorDePorcentagem(30,500));
 
-console.log("**********"); */
+console.log("**********"); 
 
 /****** -- NIVEL IV -- ******/
 
@@ -86,7 +86,7 @@ function dividirV2(a,b){
 }
 
 
-/* console.log("*********NÍVEL IV*********")
+console.log("*********NÍVEL IV*********")
 console.log("\n")
 
 console.log("potência de 4 elevada ao expoente 2")
@@ -102,4 +102,3 @@ console.log(dividirV2(30,0))
 console.log(dividirV2(0,3))
 console.log(dividirV2(0,0))
 console.log(dividirV2(10,0))
- */

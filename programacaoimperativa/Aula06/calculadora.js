@@ -54,14 +54,14 @@ let porcentagem = multiplicacao(numTotal, divisao(percentual,100));
 return porcentagem
 };
 
-console.log(calculaPorcentagem(300, 15));
+console.log(calculaPorcentagem(300, 15)+"%");
 
 //4 - Crie uma função geradorDePorcentagem que leva dois parâmetros, e que deverá retornar a porcentagem do primeiro em relação ao segundo parâmetro.
 //Exemplo: geradorDePorcentagem (2, 200) (deve retornar 1 já que 2 é 1% de 200).
 
 function geradorDePorcentagem(num, numTotal){
     let porcentagem = multiplicacao(divisao(num, numTotal), 100);
-    return porcentagem + ' % '
+    return porcentagem + '%'
 };
 
 console.log(geradorDePorcentagem(50,200));
