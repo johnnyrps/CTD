@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa10-Front-End-Formulario</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="logo">Formulário de Contato - Mercado Livre
-        <a href="index.html"></h1></a>
-    </header>
 
-    <main class="content">
-        <form id="formulario">          
-  
-            <label for="username">Nome do Usuário</label>
-            <input type="text" name="username" id="username">
-
-            <label for="password">Senha</label>
-            <input type="text" name="username" id="username"></imput>
-            
-            <label for="nascimento">Data de nascimento:</label>
-            <input type="date" name="nascimento"></input>
+        <header class="main-header">
+            <nav>
         
-  
+                <a href="http://">
+                <img src="https://cdt.org/wp-content/uploads/2016/05/CDT_LOGO_CMYK_NO_TAGLINE.png" alt=""></a>
+                <h1>Cadastro de Aluno</h1>
+            </nav>
+
+        </header>
+
+    <main>
+
+        <form class="formulario">
+
+            <div>
+                <label for="username">Nome Completo</label>
+                <input type="text" name="username" placeholder="Seu nome completo aqui" id="username">
+            </div>
+
+            <div>
+                <label for="userEmail">E-mail</label>
+                <input type="email" name="userEmail" placeholder="Seu e-mail aqui" id="userEmail">
+            </div>
+
+            <div>
+                <label for="userPassword">Senha</label>
+                <input type="password" name="userPassword" placeholder="Sua senha aqui" id="userPassword">
+            </div>
+            
+            <div>
+                <label for="userPlan">Período</label>
+                <select name="userPlan" id="userPlan">
+                    <option value="1">Manhã</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Noite</option>
+                </select>
+            </div>
+           
+            <div>
+                <label for="userDescription">Depoimento</label>
+                <textarea name="userDescription" placeholder="Deixe seu depoimento aqui" id="userDescription"></textarea>
+            </div>
+
+            
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Cadastrar</button>
+
         </form>
 
-</main>
-   
-    
-
-    
+    </main>
 
 </body>
 </html>
