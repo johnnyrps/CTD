@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 5px 5px;
+    background-color: rgb(25, 9, 104);
+    position:fixed;
+}
+
+.logo{
+    text-decoration: none;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+}
+
+
+.logo a {
+    width: 100px;
+    height: 100px;
+    background: url("https://s2.glbimg.com/Bu6upvmSg6SRv0za635uXphThKo=/620x430/e.glbimg.com/og/ed/f/original/2020/03/28/mercado-livre.jpg") center center/200px no-repeat;
+    /* position:absolute; */
+    padding: 13%;
+   
+    /* float:left; */
+
+}
