@@ -9,40 +9,52 @@
 </head>
 <body>
 
+<header class="main-header">
+    <nav>
+        
+        <a href="http://">
+        <img src="https://cdt.org/wp-content/uploads/2016/05/CDT_LOGO_CMYK_NO_TAGLINE.png" alt=""></a>
+        <h1>Cadastro de Aluno</h1>
+    </nav>
+
+</header>
+
     <main>
 
-        <form>
+        <form class="formulario">
 
-            <h1>Cadastro de Usuário</h1>
+            
 
             <div>
                 <label for="username">Nome Completo</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="username" placeholder="Seu nome completo aqui" id="username">
             </div>
 
             <div>
                 <label for="userEmail">E-mail</label>
-                <input type="email" name="userEmail" id="userEmail">
+                <input type="email" name="userEmail" placeholder="Seu e-mail aqui" id="userEmail">
             </div>
 
             <div>
                 <label for="userPassword">Senha</label>
-                <input type="password" name="userPassword" id="userPassword">
+                <input type="password" name="userPassword" placeholder="Sua senha aqui" id="userPassword">
             </div>
-
+            
             <div>
-                <label for="userDescription">Depoimento</label>
-                <textarea name="userDescription" id="userDescription"></textarea>
-            </div>
-
-            <div>
-                <label for="userPlan">Plano</label>
+                <label for="userPlan">Período</label>
                 <select name="userPlan" id="userPlan">
-                    <option value="1">Básico</option>
-                    <option value="2">Médio</option>
-                    <option value="3">Premium</option>
+                    <option value="1">Manhã</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Noite</option>
                 </select>
             </div>
+           
+            <div>
+                <label for="userDescription">Depoimento</label>
+                <textarea name="userDescription" placeholder="Deixe seu depoimento aqui" id="userDescription"></textarea>
+            </div>
+
+            
 
             <button type="reset">Limpar</button>
             <button type="submit">Cadastrar</button>
