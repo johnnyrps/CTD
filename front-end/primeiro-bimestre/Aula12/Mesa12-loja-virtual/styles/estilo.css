@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+
+    background-color: #f43b85dd;
+    width: 100%;
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    
+}
+
+.main-header nav {
+
+    /* background-color: black; */
+    max-width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+    
+}
+
+.main-header nav ul {
+
+    display:flex;
+    gap: 32px;
+    list-style: none;
+
+}
+
+
+.main-header li a {
+    
+    /* background-color: aqua; */
+    color: #FFE459;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 45px;
+
+}
+
+.main-header li .hover {
+
+    font-weight: 500;
+
+}
+
+.main-header a img {
+
+    width: 200px;
+    margin-right: 80px;
+    
+}
+
+.main-content {
+
+margin: 93px auto;
+
+}
+
+.main-content .banner {
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.main-content .products {
+    
+/* background-color: #f43b85; */
+max-width: 1200px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 32px;
+margin: 60px auto;
+
+
+}
+
+.main-content .products .product {
+
+    /* background-color: #FFE459; */
+    width: 300px;
+    border: 1px solid rgba(255, 192, 203, 0.552);
+    border-radius: 12px;
+
+}
+
+.main-content .product img {
+
+width: 100%;
+height: 200px;
+object-fit: contain; 
+
+}
+
+.main-content .product h1 {
+
+    font-size: 25px;
+    color: #11052C;
+    margin: 12px 0;
+
+}
+
+.main-content .product p {
+
+    font-size: 15px;
+    color: #3e087b8d;
+    margin: 12px 0;
+    margin-bottom: 18px; 
+
+}
+
+.main-content .product a {
+
+    font-size: 15px;
+    color: #FFE459;
+    margin: 12px 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 0;
+    display: block;
+    background-color: #f43b85;
+    border-radius: 12px;
+
+}
+
+
+.main-content .product main {
+
+    padding: 12px;
+
+}
+
+.contact {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.contact img {
+
+    width: 120px;
+    object-fit: cover;
+
+}
