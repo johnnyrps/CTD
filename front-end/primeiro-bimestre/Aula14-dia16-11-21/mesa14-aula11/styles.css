@@ -14,30 +14,15 @@ body {
 }
 
 
-.main-header {
-    width: 100%;
-    padding: 30px 450px;
-    background-color: #aebabb52;    
-}
-
-.main-header nav {
-    max-width: 1200px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 0 115px;
-}
-
-.main-header a img {
-    width: 90px;
-    float: left;
-    padding-right: 20px;
-}
 
 h1 {
-    width: 400px;
+    width: 780px;
     height: 10px;
     color: black; 
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* background-color: #97d6eb; */
 }
 
 form {
@@ -45,6 +30,7 @@ form {
         height: 570px;
         padding: 30px;
         margin:0 auto;
+        
 }
 
 label {
