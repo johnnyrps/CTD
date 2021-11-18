@@ -7,29 +7,47 @@
 // };
 
 // exercicio 2
-let filmes = ['star wars', 'totoro', 'rocky', 'pulp fiction', 'la vida es bella'];
+// let filmes = ['star wars', 'totoro', 'rocky', 'pulp fiction', 'la vida es bella'];
 
-function converteMaiuscula (lista) {
-    for (i = 0; i < lista.length; i++) {
-        lista[i] = lista[i].toUpperCase();
-    }
-    return lista;
-}
+// function converteMaiuscula (lista) {
+//     for (i = 0; i < lista.length; i++) {
+//         lista[i] = lista[i].toUpperCase();
+//     }
+//     return lista;
+// }
 
-console.log(converteMaiuscula(filmes));
+// console.log(converteMaiuscula(filmes));
 
 // Exercicio 3
 
-let animacoes = ['kungfupanda', 'toystory', 'toystory2', 'toystory3'];
+// let animacoes = ['kungfupanda', 'toystory', 'toystory2', 'toystory3'];
+
+// function passagemDeElementos(lista1, lista2) {
+//     let tamanhoLista = lista2.length
+//     for (i = 0; i < tamanhoLista; i++) {
+//         lista1.push(lista2.pop().toUpperCase());
+//     }
+//     return lista1;
+// }
+// console.log(passagemDeElementos(filmes, animacoes));
+
+//EXERCICIO 3
+
+let filmes = ["star wars", "totoro",  "rocky", "pulp fiction",  "la vida es bella"];
+let animacoes = ["toy story", "finding nemo", "kung-fu panda", "wally", "fortnite"];
 
 function passagemDeElementos(lista1, lista2) {
-    let tamanhoLista = lista2.length
-    for (i = 0; i < tamanhoLista; i++) {
-        lista1.push(lista2.pop().toUpperCase());
+        let invalido = lista2.pop();
+        let tamanhoLista = lista2.length
+        
+        for (i = 0; i < tamanhoLista; i++) {
+            lista1.push(lista2.pop().toUpperCase());
+        }
+        console.log("esse filme é inválido ", invalido);
+        return lista1;
     }
-    return lista1;
-}
-console.log(passagemDeElementos(filmes, animacoes));
+    // console.log(passagemDeElementos(filmes, animacoes));
+
 
 // Exercicio 4
 
@@ -38,6 +56,7 @@ const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
 
 function comparaNotas(asia, europa) {
     let comparaAsiaEuropa = [];
+    
     for (i = 0; i<asia.length; i++){
         comparaAsiaEuropa[i] = asia[i]===europa[i];
     }
