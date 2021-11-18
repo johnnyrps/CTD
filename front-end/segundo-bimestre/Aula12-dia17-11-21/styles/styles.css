@@ -23,16 +23,22 @@ h1::first-line {
     color: aqua;
 }
 
-input:disabled {
-    display: none;
+form::before {
+    content: "Digite seus dados abaixo!";
+    color: rgb(255, 0, 0);
 }
-
 
 .custom-input:hover {
 
     width: 300px;
     background-color: #f3f3f3
 }
+
+input:disabled {
+    display: none;
+}
+
+
 
 /* 3 novos pseudos classes */
 .custom-input:required {
@@ -44,9 +50,8 @@ button:after {
     content: "->"
 }
 
-form::before {
-    content: "Digite seus dados abaixo!";
-    color: rgb(255, 0, 0);
+main :only-child {
+    color: blue;
 }
 
 
