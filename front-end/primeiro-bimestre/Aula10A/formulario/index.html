@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+<body>
+    
+
+<div class="123-form">
+		<fieldset id="personaldata">
+			<legend>Dados Pessoais</legend>
+			<div>
+					<label for="name">Nome</label>
+				
+				<input type="text" id="name" class="required" name="name">
+
+            </div>
+			<div>
+					<label for="sobrenome">Sobrenome</label>
+			
+				<input type="text" id="sobrenome" class="required" name="sobrenome">
+            </div>
+			<div>
+                    <label for="mail">E-mail</label>
+				
+				<input type="text" id="mail" class="required  email" name="email">
+            </div>
+            <div>
+					<label for="phone">Telefone/Cel</label>
+			
+				<input type="text" id="phone" class="required  number" name="phone">
+            </div>
+		</fieldset>
+		
+        <fieldset id="pedido">
+			<legend>Dados do Pedido</legend>
+			
+                <div calss="checkboxes">
+					<label for="pedido">Marque seu doce preferido</label>
+                    <div>
+                        <input type="checkbox" id="check1" name="Doce de Leite"
+                               checked>
+                        <label for="check1">Doce de Leite</label>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="check2" name="Doce de Goiaba">
+                        <label for="check2">Doce de Goiaba</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="check3" name="Doce de Mamão">
+                        <label for="check3">Doce de Mamão</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="check4" name="Doce de Paçoca">
+                        <label for="check4">Doce de Paçoca</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="check5" name="Doce de Abóbora">
+                        <label for="check5">Doce de Abóbora</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="check6" name="Doce de Amendoim">
+                        <label for="check6">Doce de Amendoim</label>
+                      </div>
+					
+			    </div>
+                <div>
+					<label for="quantidade">Quantidade</label>
+				
+					<select size="1" name="quantidade" id="quantidade" class="required">
+						<optgroup label="quantidade">
+							<option value="qtd1">1</option>
+							<option value="qtd2">2</option>
+							<option value="qtd3">3</option>
+							<option value="qtd4">4</option>
+							<option value="qtd5">5</option>
+							<option value="qtd6">6</option>
+							<option value="qtd7">7</option>
+							<option value="qtd8">8</option>
+							<option value="qtd9">9</option>
+							<option value="qtd10">10</option>
+						</optgroup>
+					</select>
+                </div>
+                <div>
+					<label for="delivery-date">Escolha o dia da entrega</label>
+				<input type="date" id="delivery-date" class="datepicker required  date" name="delivery-date">
+            </div>
+            <div>
+					<label for="obs">Obs ou pedido adicional</label>
+            </div>
+			<div>
+					<textarea id="obs" name="obs" rows="10" cols="50">Se precisar de algo a mais só digitar aqui....</textarea>
+            </div>
+        </fieldset>
+		
+        <fieldset id="entrega">
+			<legend>Dados da Entrega</legend>
+
+            <div>
+					<label for="address">Endereço</label>
+				<input type="text" id="address" name="endereco">
+			</div>
+            <div>
+					<label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+            <div>			
+					<label for="city">Cidade</label>
+				<input type="text" id="city" name="city">
+            </div>
+            <div>
+					<label for="state">Estado</label>
+				<input type="text" id="state" name="state">
+			</div>
+            <div>
+					<label for="country">País</label>
+                    <input type="text" id="country" name="country">
+            </div>
+            <div>
+					<label for="postalcode">CEP</label>
+                    <input type="text" id="postalcode" class="digits" name="postalcode">
+                </div>
+        </fieldset>
+		
+        <fieldset id="payment">
+			<legend>Dados de Pagamento</legend>
+
+                <div>
+					<label for="pagamento">Forma de Pagamento</label>
+				
+					<select size="1" name="pagamento" id="pagamento">
+						<option value="dinheiro">Dinheiro</option>
+						<option value="cartao_credito">Cartao de Credito</option>
+						<option value="cartao_debito">Cartao de Debito</option>
+						<option value="PIX">PIX</option>
+					</select>
+                </div>
+		</fieldset>
+		
+        <div id="submit_buttons">
+			<button type="reset">Limpar</button>
+			<button type="submit">Enviar</button>
+		</div>
+		</form>
+</div>
+
+
+
+</body>
+</html>
