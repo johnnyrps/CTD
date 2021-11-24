@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    padding: 50px;
+}
+
+main h1 {
+    color:blueviolet;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(78, 78, 78, 0.753);
+    padding: 20px;
+}
+
+.main-header button {
+    opacity: .6;
+    transition: .4s ease-in-out;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 24px;
+    border-radius: 24px;
+
+}
+
+.main-header button:hover {
+    opacity: 1;
+}
+
+.main-menu {
+    
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content:left;
+    align-items: center;
+    
+}
+
+.main-menu h1{
+    color:blueviolet;
+    margin-right: 50px;
+    font-weight: 900;
+}
+
+.main-menu h1::first-letter {
+    color: white;
+    font-size: 35px;
+}
+
+.main-menu a {
+    opacity: .6;
+    color: white;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    
+    
+}
+
+.main-menu a:hover{
+    opacity: 1;
+}
+
+
+.videos {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    
+}
+
+.video {
+
+    width: 400px;
+    background-color: rgb(58, 58, 58);
+  
+    
+}
+
+.video h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.video img {
+    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 1;
+    transition: .4s ease-in-out;
+   
+}
+
+.video img:hover {
+    opacity: .6;
+}
