@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* ou pode usar auto ao invés de fr */
+    grid-template-areas:
+    'main-header    main-header' /* ocupe a primeira linha, coluna 1 e col2 */
+    'main-aside     main-content' /* ocupe a segunda linha e primeira coluna aside, Ocupe a segunda linha e col2 main-content */
+    'main-footer    main-footer' /* ocupe a terceira linha, coluna 1 e col2 main-footer */
+    ;
+}
+
+header {
+    background-color: rgb(0, 153, 153);
+    grid-area: main-header;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.main-header img {
+    width: 150px;
+    object-fit: cover;
+    
+}
+
+aside {
+    background-color: rgb(0, 255, 234);
+    grid-area: main-aside;
+    
+}
+
+.main-aside ul {
+   list-style: none;
+   padding: 90px 20px;
+   
+   
+   
+}
+
+.main-aside a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: rgb(98, 0, 255);
+    grid-area: main-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 80px;
+    flex-wrap: wrap;
+  
+
+}
+
+.main-content img {
+    width: 100%;
+    height: 500px;
+    max-width: 1200px;
+    justify-content: center;
+    object-fit: cover;
+    display: flex;
+}
+
+.main-content h1 {
+    padding: 5px 0;
+}
+
+article p {
+    color: white;
+    font-weight: 100;
+
+}
+
+
+/* footer {
+    background-color:darkgoldenrod;
+    grid-area: main-footer;
+    height:80px;
+} */
