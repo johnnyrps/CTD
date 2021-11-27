@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@500&family=Ubuntu:wght@300;500&display=swap');
+* {
+    /* RESET CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(255, 238, 0, 0.762);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    top: 0;
+  }
+
+header ul {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    list-style: none;  
+  }
+
+header ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 18px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+header button a {
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(129, 88, 0);
+  }
+
+ header button {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+  }
+
+header button:hover {
+    color: gold;
+    border: 1px solid gold;
+    transform: scale(1.2);
+  }
+
+.introducao {
+    /* TAMANHO */
+    padding: 0px;
+    /* ALINHAMENTO DO TEXTO */
+    text-align: center;
+    /* FAMÍLIA TIPOGRÁFICA */
+    font-family: 'Quicksand', sans-serif;
+    /* TAMANHO DA FONTE */
+    font-size: 18px;
+    /* ESTILO DA FONTE */
+    font-style: oblique;
+     /* ESPESSURA DA FONTE */
+     font-weight: 300;
+    /* COR DE FUNDO DO TÍTULO */
+    background-color: rgba(93, 84, 84, 0.746);
+    padding: 30px 0 30px;
+}
+
+
+
+#principal {
+    background-image: url('https://i1.wp.com/emribeirao.com/assets/media/2017/01/pra%C3%A7a-das-bandeiras-catedral-ribeirao-preto-rp.jpg?fit=1280%2C640&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+
+.conteudo {
+    text-align: center;
+    background-color: rgba(93, 84, 84, 0.746);
+    width: 100%;
+    margin-bottom: 30px 40px;
+    margin-top: 0px;   
+}
+
+.texto p {
+    /* ALINHAMENTO */
+    text-align: center;
+    /* FAMILIA TIPOGRÁFICA */
+    font-family: 'Ubuntu', sans-serif;
+    /* TAMANHO DA FONTE */
+    font-size: 16px;
+    /* ESTILO DA FONTE */
+    font-style: oblique;
+    /* ESPESSURA DA FONTE */
+    font-weight: 300;
+    /* MARGEM */
+    margin: 0;
+    padding: 20px;
+}
+
+.texto ul {
+    /* ALINHAMENTO */
+    text-align: center;
+    /* FAMILIA TIPOGRÁFICA */
+    font-family: 'Ubuntu', sans-serif;
+    /* TAMANHO DA FONTE */
+    font-size: 16px;
+    /* ESTILO DA FONTE */
+    font-style: oblique;
+    /* ESPESSURA DA FONTE */
+    font-weight: 300;
+    /* MARGEM */
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.texto li {
+    padding: 10px 0;
+}
+
+.subtitulo {
+        /* COR DA FONTE */
+        color: white;
+        /* ALINHAMENTO CENTRALIZADO DO TEXTO */
+        text-align: center;
+        /* FAMÍLIA TIPOGRÁFICA */
+        font-family: 'Ubuntu', sans-serif;
+        /* TAMANHO DA FONTE */
+        font-size: 32px;
+        /* ESTILO DA FONTE */
+        font-style: oblique;
+        /* ESPESSURA DA FONTE */
+        font-weight: 300;
+        /* ESPAÇAMENTO */
+        padding: 15px 0;
+        margin-top: 0px;
+        background-color: rgba(255, 238, 0, 0.762);      
+}
+
+
+
+#rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(93, 84, 84, 0.959); 
+}
+
+.icones {
+    margin: 20px;
+    width: 70px;
+    height: 70px;  
+}

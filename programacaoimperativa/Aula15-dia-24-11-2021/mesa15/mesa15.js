@@ -27,24 +27,70 @@ OBJETO DO CLIENTE QUE CORRESPONDE A ESSE NOME INSERIDO.
 
 // 1
 
-let ContaBancaria = {
-    numero: 123,
-    tipo: 'conta corrente',
-    saldo: 100,
-    titular: 'João da Silva',
-    Conta: function () {
-        return `Conta: ${this.numero} - Tipo: ${this.tipo} - Saldo: ${this.saldo} - Titular: ${this.titular}`;
-    }
-}
-// console.log(ContaBancaria.Conta());
+// let ContaBancaria = {
+//     numero: 123,
+//     tipo: 'conta corrente',
+//     saldo: 100,
+//     titular: 'João da Silva',
+//     Conta: function () {
+//         return `Conta: ${this.numero} - Tipo: ${this.tipo} - Saldo: ${this.saldo} - Titular: ${this.titular}`;
+//     }
+// }
+// // console.log(ContaBancaria.Conta());
 
-function Conta(numero, tipo, saldo, titular) {
+function ContaBancaria(numero, tipo, saldo, titular) {
     this.numero = numero;
     this.tipo = tipo;
     this.saldo = saldo;
     this.titular = titular;
 }
 
-const conta = require('./clientes');
+//2
 
-console.log(Conta());
+const data = require('./clientes')
+let contas = JSON.parse(data);
+contas = contas.data;
+
+// console.log(contas);
+
+// 3
+
+function criaListaContas(contas) {
+    let bdContas = [];
+    let size = contas.length;
+    for (i = 0; i < size; i++) {
+      bdContas.push(new ContaBancaria(contas[i].numero, contas[i].tipo, contas[i].saldo, contas[i].titular))
+    }
+    return bdContas
+  }
+
+  let listaContas = criaListaContas(contas);
+  
+//   console.log(listaContas);
+
+  //4 e 5
+
+  let banco = {
+    clientes: listaContas,
+    consultarCliente: function (nome) {
+      for (let i = 0; i < this.clientes.length; i++) {
+        if (nome == this.clientes[i].titular) {
+          console.log(this.clientes[i])
+          return " "
+        }
+      }
+    }
+  }
+//   console.log(banco.clientes);
+
+  function appendListaContas(numero, tipo, saldo, titular) {
+    let novaConta = new ContaBancaria(numero, tipo, saldo, titular);
+    banco.clientes.push(novaConta);
+    return banco
+  }
+  
+  appendListaContas(40430,'Conta Corrente', 10000, 'Johnny Pecego');
+
+  console.log(banco.clientes);
+
+//   console.log(banco.consultarCliente("Jarret Lafuente"));

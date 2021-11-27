@@ -1,6 +1,5 @@
-{
-    function data() {
-        return [
+
+    let clientes =  { data: [
     
     
         {
@@ -65,6 +64,8 @@
         }
     ]
 }
-}
+
+let data = JSON.stringify(clientes);
+
 
 module.exports = data;
