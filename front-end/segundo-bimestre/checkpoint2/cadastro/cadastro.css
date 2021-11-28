@@ -95,6 +95,28 @@ header button:hover {
   display: flex;
 }
 
+input {
+  border: 0;
+  border-bottom: 2px solid #f30505;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .2s ease-in-out;
+  box-sizing: border-box;
+
+}
+
+input:valid,
+input:focus {
+  border-bottom: 2px solid gold;  
+}
+
+input:hover,
+input:focus {
+  background: rgba(231, 228, 7, 0.685);
+}
+
 span {
   color: rgb(156, 156, 156);
   font-size: 18px;
@@ -139,6 +161,7 @@ p {
 
 .ponto-turistico {
   margin-top: 2rem;
+  
 }
 
 .input-radio, .input-checkbox {
@@ -146,11 +169,13 @@ p {
   min-height: 1.25rem;
   display: inline-block;
   margin-right: 0.625rem;
+ 
 }
 
 select {
   font-size: 1.25rem;
   color: #575749;
+  outline: none;
 }
 
 .label-radio {
@@ -159,6 +184,7 @@ select {
 
 .like-check {
   display: flex;
+
 }
 .ckecked {
   margin-bottom: 36px;
@@ -169,7 +195,9 @@ select {
 }
 
 textarea {
+  border: 1px solid lightgrey;
   width: 100%;
+  outline: none;
   min-height: 120px;
   border-radius: 4px;
   padding: 0.625rem;
