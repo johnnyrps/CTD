@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 2fr 500px;
+    grid-template-areas:
+    'main-header main-header'
+    'main-content main-aside'
+    
+
+}
+
+header {
+
+    background-color: rgb(92, 104, 103);
+    grid-area: main-header;
+    padding: 20px;
+    width: 100%;
+
+}
+
+/* header ul {
+
+    display: flex;
+
+} */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+section .infos div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+section img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    
+
+   
+    
+}
+
+aside {
+
+    /* background-color: lightslategray; */
+    grid-area: main-aside;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    
+
+}
+
+main {
+
+    /* background-color: lightsalmon; */
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
+
+}
+
+
+main img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+  
+   
+    
+    
+}
+
+
+
+footer {
+
+    background-color: lightpink;
+    grid-area: main-footer;
+    /* height: 50px; */
+
+}
