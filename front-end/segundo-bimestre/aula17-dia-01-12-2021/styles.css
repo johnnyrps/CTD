@@ -93,6 +93,27 @@ footer {
 
 }
 
+@media (max-width: 375px) {
+
+    body {
+
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'main-header'
+    'main-content' 
+    'main-aside';
+
+    }
+
+}
+
+@media (max-width: 1024px){
+    main img {
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     body {
