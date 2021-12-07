@@ -1,4 +1,4 @@
-//Loop de Pares
+//1 - Loop de Pares
 
 // const loopDePares = ((numero) => {
 //     for (let i = 0; i <= 100; i++){
@@ -12,7 +12,7 @@
 // // console.log(loopDePares(1));
 // loopDePares(1);
 
-//Loop de impares com palavras
+//2 - Loop de impares com palavras
 
 const loopDeImpares = ((numero, palavra) => {
     for (let i = 0; i <= 100; i++){
@@ -24,4 +24,13 @@ const loopDeImpares = ((numero, palavra) => {
   });
 
 // console.log(loopDePares(1));
-loopDeImpares(1, 'oi');
+loopDeImpares(0, 'oi');
+
+// //2 exemplo
+// let loopDeImpares = (num, palavraChave) => {
+//     for (i = 0; i < 101; i++) {
+//       console.log(((i + num) % 2 ) !=0 ? `${palavraChave}` : i);
+//     };
+// };
+
+// loopDeImpares(0, 'Oi eu sou impar')
