@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: red;
+    height: 500px;
+    padding: 33px;
+}
+
+.main-content {
+    background-color: aqua;
+    padding: 12px;
+    
+    img {
+
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    ul {
+        background-color: white;
+        display: flex;
+        gap: 32px;
+
+    }
+    li {
+        list-style: none;
+
+    }
+    a {
+        font-size: 30px;
+        text-decoration: none;
+
+        &:hover {
+            color: red;
+        }
+    }
+}

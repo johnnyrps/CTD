@@ -60,5 +60,11 @@ function numeroHomens(listaUsuarios) {
         return item.sexo === "M";
       }).length;
   }
-  console.log(numeroHomens(listaUsuarios));
+  // console.log(numeroHomens(listaUsuarios));
+
+
+
+
+
+
 
