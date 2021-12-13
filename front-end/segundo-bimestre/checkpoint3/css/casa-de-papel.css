@@ -9,19 +9,19 @@ header {
   background: white;
 }
 
-header li a.nav-link {
-  color: black !important;
+.header-nav li a.nav-link:hover {
+  color: #E50914 !important;  
 }
 
-header button.btn-outline-danger {
-  background-color: black !important;
-}
-
-header li a.nav-link:hover {
-  color: #e50914 !important;
-}
 header button.btn-outline-danger:hover {
-  background-color: #e50914 !important;
+  background-color: #E50914 !important;
+}
+
+.header-nav .btn-login {
+  transition: transform 200ms ease-in-out;
+}
+.header-nav .btn-login:hover {
+  transform: scale(1.1);
 }
 
 /*======= BANNER =========*/
@@ -29,12 +29,12 @@ header button.btn-outline-danger:hover {
   width: 100%;
 }
 
-/* .bannerimg {
-  background-image: url(../images/casa-de-papel.jpg);
-  height: 649px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* .bannerimg{
+    background-image: url(../images/avatar.jpg);
+    height: 649px;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
 } */
 
 /* ====== MAIN ======= */
@@ -105,10 +105,10 @@ header button.btn-outline-danger:hover {
   color: rgba(0, 133, 255, 0.75);
 }
 
-/* .video {
-  width: 1196px;
-  height: 659px;
-  padding-top: 15px;
+/* .video{
+width: 1196px;
+height: 659px;
+padding-top: 15px;
 } */
 
 /* FOOTER */

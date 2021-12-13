@@ -9,19 +9,19 @@ header {
   background: white;
 }
 
-header li a.nav-link {
-  color: black !important;
+.header-nav li a.nav-link:hover {
+  color: #E50914 !important;  
 }
 
-header button.btn-outline-danger {
-  background-color: black !important;
-}
-
-header li a.nav-link:hover {
-  color: #e50914 !important;
-}
 header button.btn-outline-danger:hover {
-  background-color: #e50914 !important;
+  background-color: #E50914 !important;
+}
+
+.header-nav .btn-login {
+  transition: transform 200ms ease-in-out;
+}
+.header-nav .btn-login:hover {
+  transform: scale(1.1);
 }
 
 /*======= BANNER =========*/
