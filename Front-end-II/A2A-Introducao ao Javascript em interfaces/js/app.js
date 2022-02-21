@@ -61,14 +61,12 @@
 //     console.log("É maior de idade!");
 
 // }else if(idade<18){
-        
-        
-//         console.log("é menor de idade!");
+                
+// console.log("é menor de idade!");
 
-//     }
-// else{
-//     isNaN = alert("isso não é um numero!");
-//     console.log("Digite um número!");
+// }else{
+//  isNaN = alert("isso não é um numero!");
+//  console.log("Digite um número!");
 // }
 
 
