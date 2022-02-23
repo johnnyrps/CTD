@@ -1,15 +1,13 @@
 //1 passo
 var nomeUsuario = prompt('Digite seu nome completo');
 
-
 //2 passo
 
-if (nomeUsuario) {
-    
+if (nomeUsuario) { 
+
 }else {
     alert("O nome é obrigatório")
     nomeUsuario = prompt('Digite seu nome completo')
-    
 }
 
 var telefoneAluno = prompt('Digite seu telefone com DDD')
