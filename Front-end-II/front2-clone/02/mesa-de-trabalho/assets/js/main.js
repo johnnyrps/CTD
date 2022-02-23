@@ -26,4 +26,5 @@ var ehWahtsapp = confirm ("Seu telefone aceita mensagens via WhatsApp?")
 
 alert(`Muito obrigado ${nomeUsuario}, um de nossos consultores entrará em contato com você através do número ${telefoneAluno}.`)
 
-console.log(`nome:${nomeUsuario} telefone:${telefoneAluno} aceita receber mensagens por WhatsApp? ${ehWahtsapp}`);
+console.log(`\n nome: ${nomeUsuario} \n telefone: ${telefoneAluno} \n aceita receber mensagens por WhatsApp? ${ehWahtsapp}`);
+ 
