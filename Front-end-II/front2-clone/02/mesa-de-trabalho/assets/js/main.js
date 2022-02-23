@@ -21,6 +21,7 @@ if (telefoneAluno){
     telefoneAluno = prompt('Digite seu telefone com DDD')
 };
 
+//3 passo
 var ehWahtsapp = confirm ("Seu telefone aceita mensagens via WhatsApp?")
 
 alert(`Muito obrigado ${nomeUsuario}, um de nossos consultores entrará em contato com você através do número ${telefoneAluno}.`)
