@@ -1,4 +1,6 @@
 
+// 1. Captura de dados do usuário. 
+
 /*
     O método alert() serve para apresentar em tela um pop-up
     com uma mensagem de texto. Caso deseje guardar na memória
@@ -53,6 +55,8 @@ console.log(identificacaoDoUsuario); // retorna o valor padrão ou o valor digit
     prompt() https://developer.mozilla.org/pt-BR/docs/Web/API/Window/prompt
 */
 
+// 2. Manipulação dos dados do usuário. 
+
 // Um exemplo de manipulação utilizando o alert, confirm e prompt anteriores...
 
 /*
@@ -81,5 +85,5 @@ console.log(identificacaoDoUsuario); // retorna o valor padrão ou o valor digit
             que possui o resultado (se espera o nome do usuário) do prompt
             para manipular os dados.
         */
-        alert(identificacaoDoUsuario + " vamos te redirecionar para um de nossos consultores.");
+        alert(identificacaoDoUsuario + " vamos lhe redirecionar para um de nossos consultores.");
     }
