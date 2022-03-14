@@ -1,3 +1,7 @@
+var documento = document.body;
+
+console.log(documento);
+
 
 // 1. Criar o elemento que desejos adicionar ao DOM
 var botao = document.createElement("button");
@@ -9,7 +13,7 @@ var botaoTexto = document.createTextNode("Abrir um alerta");
 botao.appendChild(botaoTexto);
 
 // 4. Adicionamos o elemento que contém um nó de texto no DOM
-document.body.appendChild(botao);
+documento.appendChild(botao);
 
 // 5. Adicionamos atributo(s) e valores ao elemento
 // Neste exemplo adicionaremos uma url de destino
