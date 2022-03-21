@@ -1,0 +1,36 @@
+#!/bin/bash
+for word in $(cat lista_nomes.txt)
+        do
+                echo "o nome e $word"
+
+                if [ $word = "Marcel" ]; then
+                        echo "Encontrei o $word"
+                else
+                        let a=$a+1
+                fi
+        done
+        echo $a
+
+
+o nome e Caio
+o nome e Pedro
+o nome e Paulo
+o nome e Marcel
+Encontrei o Marcel
+o nome e Vinicius
+o nome e Alberto
+o nome e Rodrigo
+o nome e Saulo
+o nome e Rodolfo
+o nome e Lucas
+o nome e Jean
+o nome e Mario
+o nome e Mateus
+o nome e Rafael
+o nome e Otavio
+o nome e Luiz
+o nome e Tomas
+o nome e Henrique
+o nome e Wallin
+o nome e Leonel
+19
