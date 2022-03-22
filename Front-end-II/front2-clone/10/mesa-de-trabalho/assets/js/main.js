@@ -7,7 +7,7 @@ formulario.addEventListener("submit", function (evento) {
 evento.preventDefault()
 
 // 2. Crie da rotina que será disparada a partir do evento de envio
-    var SemTratamento = evento.target[0].value;
+    var SemTratamento = evento.target[0].value.trim();
     
 // 2.1. Remova todos os números permitindo apenas texto
     var SemTratamento = campo.value.replace(/\d+/g,'');
