@@ -18,8 +18,6 @@ evento.preventDefault()
 // 3. Capture o evento de envio do formulário e disparar a rotina
     li.innerText = SemEspacos;
 
-// 4. Crie um crie um alerta
-    alert("Texto sem Tratamento: " + SemTratamento);
 
 });
 
