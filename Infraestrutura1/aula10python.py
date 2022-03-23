@@ -1,6 +1,6 @@
 import fileinput
 a = 0
-for nome in fileinput.input("C:\\backupteste\\lista_nomes.txt"):
+for nome in fileinput.input("lista_nomes.txt"):
     if nome.strip() == "Marcel":
         print ("Encontrei o Marcel")
     else:
