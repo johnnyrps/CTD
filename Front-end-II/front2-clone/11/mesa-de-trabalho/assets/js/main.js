@@ -31,8 +31,7 @@ var campo = document.querySelector('.c-form__campo');
 var li = document.querySelector('.c-lista__item');
 
 //2. Crie uma rotina que será disparada a partir do evento de envio
-formulario.addEventListener("submit", function (evento){
-evento.preventDefault()
+formulario.addEventListener("submit", function (evento){evento.preventDefault()
 
 var valorDoCampoTexto = evento.target[0].value.trim();
 
@@ -42,20 +41,25 @@ var campoPossuiCaracteresEspeciais = possuiCaracteresEspeciais(valorDoCampoTexto
 var campoPossuiMaisDeVinteCaracteres = possuiMaisDeVinteCaracteres(valorDoCampoTexto)
 
     if(campoVazio) {
-    console.log('Campo é obrigatório e precisa ser preenchido!');
+    console.log('Campo é obrigatório e precisa ser preenchido!')
+    alert("Campo é obrigatório e precisa ser preenchido!");
     }
     else if (campoPossuiMaisDeVinteCaracteres) {
-    console.log('Campo não pode ultrapassar vinte caracteres');
+    console.log('Campo não pode ultrapassar vinte caracteres')
+    alert("Campo não pode ultrapassar vinte caracteres");
     }
     else if(campoPossuiNumeros) {
-    console.log('Campo não pode ter números!');
+    console.log('Campo não pode ter números!')
+    alert("Campo não pode ter números!");
     }
     else if(campoPossuiCaracteresEspeciais) {
-    console.log('Campo não pode conter caracteres especiais');
+    console.log('Campo não pode conter caracteres especiais')
+    alert("Campo não pode conter caracteres especiais");
     }
     else {
         li.innerText = valorDoCampoTexto;
-    console.log('Está tudo ok para envio');
+    console.log('Está tudo ok para envio')
+    alert("Enviado Obrigado!");
     } 
 
     
