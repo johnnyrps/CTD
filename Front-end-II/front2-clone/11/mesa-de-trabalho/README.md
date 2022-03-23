@@ -16,7 +16,7 @@ A atividade consiste em devenvolver capturar e manipular os dados de um formulá
 
     - 2.3. Caso passe na validacão, apresente o item no elemento DOM `<li class="c-lista__item">`.
 
-3. Crie uma rotina que será disparada sempre que o usuário tirar o foco da campo de entrada
+3. Crie uma rotina que será disparada sempre que o usuário tirar o foco do campo de entrada
 
     - 2.1. Valide se o campo esta vazio
 

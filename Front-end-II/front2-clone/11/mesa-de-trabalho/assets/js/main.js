@@ -31,7 +31,6 @@ var campo = document.querySelector('.c-form__campo');
 var li = document.querySelector('.c-lista__item');
 
 //2. Crie uma rotina que será disparada a partir do evento de envio
-function validarEnvioDados(evento){
 formulario.addEventListener("submit", function (evento){
 evento.preventDefault()
 
@@ -55,9 +54,13 @@ var campoPossuiMaisDeVinteCaracteres = possuiMaisDeVinteCaracteres(valorDoCampoT
     console.log('Campo não pode conter caracteres especiais');
     }
     else {
+        li.innerText = valorDoCampoTexto;
     console.log('Está tudo ok para envio');
-    }
-})};
+    } 
+
+    
+
+});
 
 // 2.1. Implementação das validações
 
@@ -106,4 +109,5 @@ function possuiMaisDeVinteCaracteres(valorDoCampo) {
 
 // 3. 
 
-campo.addEventListener('blur', validarEnvioDados);
+campo.addEventListener('blur', formulario);
+
