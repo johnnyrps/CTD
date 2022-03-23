@@ -23,3 +23,87 @@
 
             - Se o campo possuir caracteres especiais, apresente a seguinte mensagem no console do navegador `"Não é permitido o uso de caracteres especiais em sua lista."`.
 */
+
+
+//1. Selecione o formulário e o botão do campo de entrada
+var formulario = document.querySelector("#formularioDeCadastro");
+var campo = document.querySelector('.c-form__campo');
+var li = document.querySelector('.c-lista__item');
+
+//2. Crie uma rotina que será disparada a partir do evento de envio
+function validarEnvioDados(evento){
+formulario.addEventListener("submit", function (evento){
+evento.preventDefault()
+
+var valorDoCampoTexto = evento.target[0].value.trim();
+
+var campoVazio = estaVazio(valorDoCampoTexto);
+var campoPossuiNumeros = possuiNumeros(valorDoCampoTexto);
+var campoPossuiCaracteresEspeciais = possuiCaracteresEspeciais(valorDoCampoTexto);
+var campoPossuiMaisDeVinteCaracteres = possuiMaisDeVinteCaracteres(valorDoCampoTexto)
+
+    if(campoVazio) {
+    console.log('Campo é obrigatório e precisa ser preenchido!');
+    }
+    else if (campoPossuiMaisDeVinteCaracteres) {
+    console.log('Campo não pode ultrapassar vinte caracteres');
+    }
+    else if(campoPossuiNumeros) {
+    console.log('Campo não pode ter números!');
+    }
+    else if(campoPossuiCaracteresEspeciais) {
+    console.log('Campo não pode conter caracteres especiais');
+    }
+    else {
+    console.log('Está tudo ok para envio');
+    }
+})};
+
+// 2.1. Implementação das validações
+
+// 2.1.1. Verifica se o campo esta vazio
+function estaVazio(valorDoCampo) {
+
+var respostaDaValidacao = valorDoCampo === '';
+
+return respostaDaValidacao;
+
+}
+
+// 2.1.2. Verifica se o campo possui números
+function possuiNumeros(valorDoCampo) {
+
+var expressaoRegular = /\d+/g;
+    
+var respostaDaValidacao = expressaoRegular.test(valorDoCampo);
+
+return respostaDaValidacao;
+
+}
+
+// 2.1.3. Verifica se o campo possui alguns caracteres especiais
+function possuiCaracteresEspeciais(valorDoCampo) {
+
+    var expressaoRegular = /\W/g;
+        
+    var respostaDaValidacao = expressaoRegular.test(valorDoCampo);
+
+    return respostaDaValidacao;
+}
+
+// 2.1.4. Verifica se o campo possui no máximo vinte caracteres
+function possuiMaisDeVinteCaracteres(valorDoCampo) {
+
+    var numeroDeCaracteres = valorDoCampo.length;
+
+    var limiteDeCaracteres = 20;
+
+    var respostaDaValidacao = numeroDeCaracteres > limiteDeCaracteres;
+
+    return respostaDaValidacao;
+    
+}
+
+// 3. 
+
+campo.addEventListener('blur', validarEnvioDados);

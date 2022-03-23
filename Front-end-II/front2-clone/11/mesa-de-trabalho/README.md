@@ -1,6 +1,6 @@
 # Aula 11 - Mesa de trabalho
 
-A atividade consiste em devenvolver capturar e manipular os dados de uma formulário.
+A atividade consiste em devenvolver capturar e manipular os dados de um formulário.
         
 ## Instruções
 

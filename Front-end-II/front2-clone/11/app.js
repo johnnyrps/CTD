@@ -31,7 +31,7 @@ function validarEnviarDadosDoFormulario(evento) {
         console.log('Está tudo ok para envio');
     }
         
-}
+};
 
 // 2.1. Implementação das validações
 
