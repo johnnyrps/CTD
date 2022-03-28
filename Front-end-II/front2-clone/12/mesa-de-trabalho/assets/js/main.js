@@ -11,6 +11,14 @@ formulario.addEventListener('submit', function(evento) {
 
     // 3. Armazene o json no localStorage ou sessionStorage.
 
+    // 4. Crie uma função para exibir os itens do localStorage.
+
+    // 5. Crie uma função para exibir os itens do sessionStorage.
+
+   //Crie função para exibir os itens do localStorage e sessionStorage.
+
+
+
 });
 
 
