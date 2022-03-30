@@ -20,7 +20,7 @@
                 
             - O servidor não armazenará quaisquer dados sobre as requisições realizadas 
               pelo cliente, em outras palavras, se a rota necessitar de autenticação, 
-              a cara requisição será enviado, junto ao pedido, dados que comprovam 
+              a cada requisição será enviado, junto ao pedido, dados que comprovam 
               a autorização de acesso ao recurso;
 
         4. Informação cacheada
