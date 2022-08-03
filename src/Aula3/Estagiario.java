@@ -1,6 +1,6 @@
 package Aula3;
 
-public class Estagiario extends Vendedor{
+public class Estagiario {
 
 
 
