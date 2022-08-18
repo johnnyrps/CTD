@@ -10,8 +10,6 @@ public class Main {
     public static String selectDentistaAllSql = "select * from Dentista";
     public static String truncateDentistaSql = "truncate table Dentista";
 
-    private static Connection connection;
-
     public static void main(String[] args) throws Exception{
 
         Dentista dentista = new Dentista(1, "Johnny", "Pecego");
@@ -93,7 +91,7 @@ public class Main {
     }
 
     public static String getAllDentista() throws SQLException {
-        connection = getConnection();
+        Connection connection = getConnection();
         String allDentista = "";
 
         try {
@@ -102,7 +100,7 @@ public class Main {
             ResultSet allDentistsResultSet = allDentistaStatement.getResultSet();
             allDentistaStatement.close();
             while (allDentistsResultSet.next()) {
-                allDentista += allDentistsResultSet.getInt("matricula:") + " " + allDentistsResultSet.getString("nome") + " " + allDentistsResultSet.getString("sobrenome") + "\n";
+                allDentista = allDentistsResultSet.getInt("matricula:") + " " + allDentistsResultSet.getString("nome") + " " + allDentistsResultSet.getString("sobrenome") + "\n";
             }
             return allDentista;
         } catch (Exception e) {
