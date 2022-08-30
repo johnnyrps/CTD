@@ -11,7 +11,8 @@ public class ConfiguracaoJDBC {
     private String nomeUsuario;
     private String senha;
 
-    public ConfiguracaoJDBC(String jdbcDriver, String dbUrl, String nomeUsuario, String senha) {
+
+    public void ConfiguracaoJDBC(String jdbcDriver, String dbUrl, String nomeUsuario, String senha) {
         this.jdbcDriver = jdbcDriver;
         this.dbUrl = dbUrl;
         this.nomeUsuario = nomeUsuario;

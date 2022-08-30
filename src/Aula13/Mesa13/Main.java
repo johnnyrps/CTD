@@ -4,15 +4,15 @@ import java.sql.*;
 
 public class Main {
 
-    private static final String sqlCreate = "DROP TABLE IF EXISTS Dentista;"+ "CREATE TABLE Dentista"+ "("+ "matricula INT PRIMARY KEY,"+ "nome VARCHAR(100) NOT NULL,"+ "sobrenome VARCHAR(100) NOT NULL,"+ ");";
-    private static final String sqlInsert = "INSERT INTO Dentista(matricula,nome,sobrenome) VALUES (?,?,?);";
-    private static final String sqlUpdate = "UPDATE Dentista SET nome = ? WHERE matricula = ?;";
-    public static String selectDentistaAllSql = "select * from Dentista";
-    public static String truncateDentistaSql = "truncate table Dentista";
+    private static final String sqlCreate = "DROP TABLE IF EXISTS dentista; CREATE TABLE dentista (matricula INT PRIMARY KEY, nome VARCHAR(100) NOT NULL, sobrenome VARCHAR(100) NOT NULL);";
+    private static final String sqlInsert = "INSERT INTO dentista(matricula,nome,sobrenome) VALUES (?,?,?);";
+    private static final String sqlUpdate = "UPDATE dentista SET nome = ? WHERE matricula = ?;";
+    public static String selectDentistaAllSql = "select * from dentista";
+    public static String truncateDentistaSql = "truncate table dentista";
 
     public static void main(String[] args) throws Exception{
 
-        Dentista dentista = new Dentista(1, "Johnny", "Pecego");
+        Dentista dentista = new Dentista(01, "Johnny", "Pecego");
 
         Connection connection = null;
         try {
@@ -63,7 +63,7 @@ public class Main {
 
             connection.setAutoCommit(true);
 
-            String sqlSelect = "SELECT * FROM Dentista";
+            String sqlSelect = "SELECT * FROM dentista";
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sqlSelect);
             while(resultSet.next()){
@@ -83,7 +83,7 @@ public class Main {
     }
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:h2:~/test","sa","password");
+            return DriverManager.getConnection("jdbc:h2:~/test","sa","");
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);

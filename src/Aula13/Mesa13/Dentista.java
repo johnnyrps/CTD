@@ -7,9 +7,9 @@ public class Dentista {
     private int matricula;
 
     public Dentista(int matricula, String nome, String sobrenome) {
-        this.sobrenome = sobrenome;
-        this.nome = nome;
         this.matricula = matricula;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
     }
 
     public String getSobrenome() {
